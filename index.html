@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="bg-[#f9f7f9]" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS/functions.js"></script>
+    <title>Portafolio</title>
+</head>
+
+<body class="font-sans">
+    <div id="bg-modal" class="items-center justify-center hidden w-full h-full bg-zinc-900/50 fixed z-[1]">
+        <div id="modal-content" class="bg-white rounded-lg p-9 flex flex-col items-center gap-4">
+            <p id="modal-text" class="text-black text-xl"></p>
+            <button id="close" class="w-[48%] h-67 p-4 ml-[4%] bg-[#2A7AE4] text-center text-white transition hover:scale-110 hover:-translate-y-1 duration-150 ease-in-out">Entendido</button>
+        </div>
+    </div>
+    <div class="mt-8 mb-6 ml-[15%] md:ml-0 md:flex md:justify-around md:mb-0">
+        <div class="flex">
+            <img src="Imagenes/Stars.svg" alt="info">
+            <p class="ml-2">Miguel Cortés</p>
+        </div>
+        <div class="hidden md:flex ">
+            <a href="#AboutMe">
+                <p>Sobre mi</p>
+            </a>
+            <a class="ml-8" href="#Skills">
+                <p>Skills</p>
+            </a>
+            <a class="ml-8" href="#Hobbies">
+                <p>Hobbies</p>
+            </a>
+            <a class="ml-8" href="#Formacion">
+                <p>Formación</p>
+            </a>
+            <a class="ml-8" href="#Proyectos">
+                <p>Proyectos</p>
+            </a>
+            <a class="ml-8" href="#Contacto">
+                <p>Contacto</p>
+            </a>
+        </div>
+    </div>
+    <div class="flex md:justify-center md:mt-8 flex-col-reverse md:flex-row flex-wrap content-center">
+        <div class="flex flex-col justify-center w-[70%] md:w-[43%] mr-6">
+            <h1 class="text-[26px] mt-4 md:mt-0 md:text-5xl">Hola, mi nombre es Miguel Cortés y soy desarrollador
+                FrontEnd</h1>
+            <p class="mt-6 text-justify">Soy un ingeniero ambiental que ha encontrado pasión en el mundo de la
+                programación. Ha sido emocionante para mí afrontar todos los desafíos que he encontrado en la
+                programación durante estos años. Sé que es el comienzo de una gran travesía, así que he llegado aquí con
+                disposición, sin prisa y con mucho ánimo de aprender.
+            </p>
+            <div class="mt-6 flex justify-around flex-wrap">
+                <a class="flex" href="https://github.com/IquelmCortes">
+                    <p>Github</p><img src="Imagenes/arrow_back_black_24dp 1.svg" alt="Go">
+                </a>
+                <a class="flex" href="https://www.linkedin.com/in/pedro-miguel-cort%C3%A9s-rojas-932071177/">
+                    <p>Likedin</p><img src="Imagenes/arrow_back_black_24dp 1.svg" alt="Go">
+                </a>
+                <a class="flex" href="https://www.instagram.com/iquelm/">
+                    <p>Instagram</p><img src="Imagenes/arrow_back_black_24dp 1.svg" alt="Go">
+                </a>
+            </div>
+        </div>
+        <div class="w-[25%]">
+            <img class="max-w-xs rounded-[50%] w-[100%]" src="Imagenes/perfil.jpg" alt="Foto">
+        </div>
+    </div>
+    <div class="mt-6 flex flex-col bg-[#EAF2FD] flex-wrap content-center pb-6" id="AboutMe">
+        <h2 class="text-3xl w-[70%] mt-6">Sobre mí</h2>
+        <p class="mt-4 w-[70%] text-justify">Soy técnico en desarrollo de aplicaciones para dispositivos móviles.
+            Actualmente me encuentro especializandome en Front End y cuento con una certificación en desarrollo web. En
+            mi aventura por el mundo de la programación, he adquirido conocimientos en el manejo de Crud por medio de
+            SpringBoot (java) para la creación de endpoints y su consumo en servicios web, teniendo en cuenta la
+            conexión a bases de datos (mongoDB, MySQL, Postgre, H2). <br>
+            Para aprovechar el manejo de los crud, he aprendido acerca del consumo de apis a través de ajax y fetch. Me
+            gusta trabajar en HTML y en compañía de css y javascript (aunque también uso librerias de estilos como en
+            este proyecto he decido usar Tailwind) y tengo conocimiento en Angular para el manejo de proyectos.
+            Actualmente me encuentro estudiando React, ya que la considero una herramienta
+            potente para el despliegue de aplicaciones. <br><br> Me siento en un mundo muy emocionante e importante para
+            la sociedad, realmente deseo aprender mucho, crecer en mis capacidades y poder apoyar a más personas que se
+            encuentren en mi mismo camino.
+        </p>
+        <img class="w-[113px] mt-4" src="Imagenes/Sign.png" alt="firma">
+    </div>
+    <div class="flex flex-col flex-wrap content-center mt-6 text-3xl gap-x-3" id="Skills">
+        <h2>Skills</h2>
+        <div class="flex w-[70%] flex-wrap justify-around">
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/html.svg" alt="HTML">
+                <p class="text-base mt-2">HTML 5</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/css.svg" alt="CSS">
+                <p class="text-base mt-2">CSS 3</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/javascript.svg" alt="JS">
+                <p class="text-base mt-2">JavaScript</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/Node.svg" alt="Node">
+                <p class="text-base mt-2">Node</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/Angular.png" alt="Angular">
+                <p class="text-base mt-2">Angular</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/java.svg" alt="Java">
+                <p class="text-base mt-2">Java</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/springBoot.svg" alt="SpringBoot">
+                <p class="text-base mt-2">SpringBoot</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/hubspot.png" alt="Hubspot">
+                <p class="text-base mt-2">Hubspot</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col flex-wrap content-center mt-6 text-3xl gap-x-3" id="Hobbies">
+        <h2>Hobbies</h2>
+        <div class="flex w-[70%] flex-wrap justify-around">
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col  justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/Games.png" alt="games">
+                <p class="text-base mt-2">Juegos</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/futbol.webp" alt="Futbol">
+                <p class="text-base mt-2">Futbol</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/cycling-icon.svg" alt="Bike">
+                <p class="text-base mt-2">Ciclismo</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/caminata.png" alt="Caminata">
+                <p class="text-base mt-2">Caminata</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/tv.png" alt="Tv">
+                <p class="text-base mt-2">TV</p>
+            </div>
+            <div class="bg-white mt-6 w-[150px] h-[150px] flex flex-wrap flex-col justify-center items-center">
+                <img class="w-[50px]" src="Imagenes/lectura.png" alt="Lectura">
+                <p class="text-base mt-2">Lectura</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-6 flex flex-col bg-[#EAF2FD] flex-wrap content-center" id="Formacion">
+        <h2 class="text-3xl w-[70%] mt-6">Formación académica</h2>
+        <div class="flex justify-evenly w-[70%] flex-wrap">
+            <div class="p-6">
+                <img class="w-[215px] bg-white" src="Imagenes/EAN.png" alt="EAN">
+                <p class="w-[215px]"><span class="text-lg font-bold">Ingeniería ambiental</span><br>Universidad EAN
+                    (2015-2020)</p>
+            </div>
+            <div class="p-6">
+                <img class="w-[215px] bg-white" src="Imagenes/Sergio Arboleda.png" alt="Sergio Arboleda">
+                <p class="w-[215px]"><span class="text-lg font-bold">Ruta 2 de Mision tic (Desarrollo
+                        web)</span><br>Sergio Arboleda (2021)</p>
+            </div>
+            <div class="p-6">
+                <img class="w-[215px] bg-white" src="Imagenes/SENA.png" alt="SENA">
+                <p class="w-[215px]"><span class="text-lg font-bold">Técnico en desarrollo de aplicaciones
+                        móviles</span><br>SENA(2021-2023)</p>
+            </div>
+            <div class="p-6">
+                <img class="w-[215px] bg-white" src="Imagenes/Alura.png" alt="Alura">
+                <p class="w-[215px]"><span class="text-lg font-bold">Especialización FrontEnd</span><br>One (cursando)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-6 mb-6 flex flex-col flex-wrap content-center" id="Proyectos">
+        <h2 class="text-3xl w-[70%]">Experiencia profesional</h2>
+        <div class="flex w-[70%] flex-col md:flex-row mt-6 items-center">
+            <img class="w-[70%] md:w-[55%]" src="Imagenes/logo-insoftar.png" alt="Insoftar">
+            <div class="flex flex-col justify-center mt-4 md:mt-0 md:ml-[2%] md:w-[43%]">
+                <p class="font-bold text-center">Insoftar SAS</p>
+                <p class="text-center">Julio 2022 - actualidad</p>
+                <div class="flex mt-4">
+                    <a class="w-[100%] h-67 p-4 text-[#2A7AE4] text-center border border-solid border-[#2A7AE4] text-base transition hover:scale-105 hover:-translate-y-1 duration-150 ease-in-out"
+                        href="https://www.insoftar.com/">Visitar página</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-[70%] flex-col md:flex-row mt-6 items-center">
+            <img class="w-[70%] md:w-[55%]" src="Imagenes/Encriptador.png" alt="Encriptador">
+            <div class="flex flex-col justify-center mt-4 md:mt-0 md:ml-[2%] md:w-[43%]">
+                <p class="font-bold text-center">Encriptador de texto</p>
+                <p class="text-center">Challenge oracle</p>
+                <div class="flex mt-4">
+                    <a class="w-[48%] h-67 p-4 text-[#2A7AE4] text-center border border-solid border-[#2A7AE4] text-base transition hover:scale-110 hover:-translate-y-1 duration-150 ease-in-out"
+                        href="https://github.com/IquelmCortes/Encriptador">Repositorio</a>
+                    <a class="w-[48%] h-67 p-4 ml-[4%] bg-[#2A7AE4] text-center text-white transition hover:scale-110 hover:-translate-y-1 duration-150 ease-in-out"
+                        href="https://iquelmcortes.github.io/Encriptador/">Ver demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#EAF2FD] flex flex-col flex-wrap items-center" id="Contacto">
+        <div class="w-[70%]">
+            <h2 class="text-2xl mt-6 text-center">Contacto</h2>
+            <p class="mt-4 text-center">¿Quieres contactarme? Completa el siguiente formulario y me pondré en contacto
+                contigo lo antes posible. </p>
+        </div>
+        <form action="#" class="mt-6 mb-6 flex flex-wrap flex-col w-[70%] max-w-xl" id="Contacto">
+            <div class="flex flex-col mb-2">
+                <input class="bg-white rounded-lg h-10 p-4" type="text" id="nombre" name="nombre" maxlength="50"
+                    placeholder="Nombre">
+                <span class="text-[12px] text-red-500" id="error-nombre"></span>
+            </div>
+            <div class="flex flex-col mb-2">
+                <input class="bg-white rounded-lg h-10 p-4" type="email" id="email" name="email" placeholder="Correo"
+                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                <span class="text-[12px] text-red-500" id="error-email"></span>
+            </div>
+            <div class="flex flex-col mb-2">
+                <input class="bg-white rounded-lg h-10 p-4" type="text" id="asunto" name="asunto" maxlength="50"
+                    placeholder="Asunto" required>
+                <span class="text-[12px] text-red-500" id="error-asunto"></span>
+            </div>
+            <div class="flex flex-col mb-2">
+                <input class="bg-white rounded-lg h-10 p-4" id="mensaje" name="mensaje" maxlength="300"
+                    placeholder="Mensaje" required>
+                <span class="text-[12px] text-red-500" id="error-mensaje"></span>
+            </div>
+            <div class="self-center">
+                <button type="submit" id="enviar" disabled>Enviar</button>
+            </div>
+        </form>
+    </div>
+    <footer class="w-full pt-4">
+        <p class="text-center pb-4">Designed by <span class="font-bold">Miguel Cortés</span><br>2023</p>
+    </footer>
+</body>
+</html>
